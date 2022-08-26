@@ -1,0 +1,5 @@
+.checkbox {position: relative; width:16px; height:16px; border: 1px solid #888; border-radius: 4px; background: white;}
+.checkbox::after {content: ''; position: absolute; display: none; left: 1px; top: 2px; width: 10px; height: 5px; border-left: 2px solid #333; border-bottom: 2px solid #333; transform: rotateZ(-45deg);}
+
+.checkbox.active::after,
+:checked + checkbox::after {display: block;}

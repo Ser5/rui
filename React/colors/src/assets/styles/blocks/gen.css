@@ -1,0 +1,2 @@
+.gen {display: flex; flex-direction: column;}
+.gen__button:not(:last-child) {margin-bottom: 10px;}

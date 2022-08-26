@@ -1,0 +1,11 @@
+.color {overflow: hidden; position: relative; display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 1px; border-radius: 10px;}
+.color:not(:last-child) {margin-bottom: 20px;}
+.color__block {padding: 10px 15px;}
+.color__text {width: 80%}
+.color__delete {position: absolute; right: 10px; top: 13px; font-size: 32px; cursor: pointer;}
+.color__delete::after {content:'×';}
+
+@media (max-width: 476px) {
+	.color {grid-template-columns: 1fr 1fr;}
+	.color__block:first-child {display: none;}
+}

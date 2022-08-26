@@ -1,0 +1,11 @@
+.filter {display: flex; flex-direction: column; width: 75%;}
+.filter__buttons {display: flex; justify-content: space-between; margin-bottom: 10px;}
+.filter__button {width: 31%;}
+.filter__amount {font-size: 80%; font-weight: bold; color: #555;}
+
+@media (max-width: 700px) {
+	.filter {width: auto;}
+	.filter__buttons {flex-direction: column;}
+	.filter__button {width: auto;}
+	.filter__button:not(:last-child) {margin-bottom: 5px;}
+}

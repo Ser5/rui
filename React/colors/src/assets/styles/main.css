@@ -1,0 +1,19 @@
+* {box-sizing:border-box;}
+body {background:#222; font-family:Arial; font-size:16px; color:#333; line-height:125%;}
+label {display: block;}
+
+input,  input:focus,
+select, select:focus,
+button, button:focus {padding: 3px 5px; background: white; border: 1px solid #888; border-radius: 4px; outline: none; text-align: left; font-size: inherit;}
+
+select, label, button {cursor: pointer;}
+
+label {white-space: nowrap; user-select: none;}
+
+.hidden {display: none;}
+
+
+
+#root {display: flex; justify-content: center; width: 100%; min-width: 320px; padding: 150px 10px 0 10px;}
+
+.app {max-width: 700px;}
