@@ -1,5 +1,5 @@
-* {box-sizing:border-box;}
-body {background:#222; font-family:Arial; font-size:16px; color:#333; line-height:125%;}
+*     {box-sizing:border-box;}
+body  {background:#222; font-family:Arial; font-size:16px; color:#333; line-height:125%;}
 label {display: block;}
 
 input,  input:focus,
@@ -16,4 +16,10 @@ label {white-space: nowrap; user-select: none;}
 
 #root {display: flex; justify-content: center; width: 100%; min-width: 320px; padding: 150px 10px 0 10px;}
 
-.app {max-width: 700px;}
+.app {width: 700px;}
+@media (max-width: 700px) {
+	.app {width: auto; max-width: 700px;}
+}
+@media (max-width: 476px) {
+	#root {padding-top: 10px;}
+}
