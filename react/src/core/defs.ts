@@ -68,20 +68,4 @@ export type TEditColorData = {
 
 
 
-export interface IAction {
-	type: ActionTypeEnum;
-}
-
-export interface IEditColorAction extends IAction {
-	payload: TEditColorData,
-}
-
-export interface IDeleteColorAction extends IAction {
-	payload: number,
-}
-
-export interface IToggleFilterAction extends IAction {
-	payload: string,
-}
-
 export type TDispatch = (type: string, data?: any) => void;
